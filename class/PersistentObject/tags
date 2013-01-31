@@ -1,0 +1,247 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AccountInfo	class.AccountInfo.php	/^class AccountInfo$/;"	c
+Birthday	class.PetInfo.php	/^		$this->Birthday=null;$/;"	v
+Birthday	class.PetInfo.php	/^	public $Birthday;$/;"	v
+Birthplace	class.PetInfo.php	/^		$this->Birthplace='寵物星球';$/;"	v
+Birthplace	class.PetInfo.php	/^	public $Birthplace;$/;"	v
+Gender	class.PetInfo.php	/^		$this->Gender=null;$/;"	v
+Gender	class.PetInfo.php	/^	public $Gender;$/;"	v
+Group	class.Group.php	/^class Group$/;"	c
+Introduction	class.PetInfo.php	/^		$this->Introduction=null;$/;"	v
+Introduction	class.PetInfo.php	/^	public $Introduction;	$/;"	v
+Name	class.PetInfo.php	/^		$this->Name=null;$/;"	v
+Name	class.PetInfo.php	/^	public $Name;$/;"	v
+PersistentObj	class.Abstract.PersistentObj.php	/^abstract class PersistentObj$/;"	c
+PetID	class.PetInfo.php	/^		$this->PetID=null;$/;"	v
+PetID	class.PetInfo.php	/^	public $PetID;$/;"	v
+PetID	class.PetStatus.php	/^		$this->PetID=null;$/;"	v
+PetID	class.PetStatus.php	/^	public $PetID;$/;"	v
+PetInfo	class.PetInfo.php	/^class PetInfo$/;"	c
+PetStatus	class.PetStatus.php	/^class PetStatus$/;"	c
+Pic	class.AccountInfo.php	/^		$this->Pic=null;  $/;"	v
+Pic	class.AccountInfo.php	/^	public $Pic;$/;"	v
+Pic	class.Post.php	/^		$this->Pic = null;$/;"	v
+Pic	class.Post.php	/^	public $Pic;$/;"	v
+Post	class.Post.php	/^class Post extends PersistentObj$/;"	c
+Spouse	class.PetInfo.php	/^		$this->Spouse='無';$/;"	v
+Spouse	class.PetInfo.php	/^	public $Spouse;$/;"	v
+UserID	class.PetInfo.php	/^		$this->UserID=null;$/;"	v
+UserID	class.PetInfo.php	/^	public $UserID;$/;"	v
+__construct	class.Abstract.PersistentObj.php	/^	function __construct($para_db, $para_data = null)$/;"	f
+__construct	class.AccountInfo.php	/^	function __construct($para_db)$/;"	f
+__construct	class.Group.php	/^	function __construct($para_db)$/;"	f
+__construct	class.PetInfo.php	/^	function __construct($para_db)$/;"	f
+__construct	class.PetStatus.php	/^	function __construct($para_db)$/;"	f
+__construct	class.Post.php	/^	function __construct($para_db)$/;"	f
+__get	class.Abstract.PersistentObj.php	/^	public function __get($para_key)$/;"	f
+__set	class.Abstract.PersistentObj.php	/^	public function __set($para_key, $para_value)$/;"	f
+active	class.AccountInfo.php	/^	public function active()$/;"	f
+addUsers	class.Group.php	/^	public function addUsers($parameters)$/;"	f
+ary	class.Group.php	/^		$ary = array();$/;"	v
+ary	class.Post.php	/^			$ary = self::getListBySqlstmt($stmt, $para_db);$/;"	v
+ary	class.Post.php	/^		$ary = array();$/;"	v
+cleanliness	class.PetStatus.php	/^		$this->cleanliness=30;$/;"	v
+cleanliness	class.PetStatus.php	/^	public $cleanliness;$/;"	v
+content	class.Post.php	/^		$this->content = null;$/;"	v
+content	class.Post.php	/^	public $content;$/;"	v
+currentExperience	class.PetStatus.php	/^		$this->currentExperience=0;$/;"	v
+currentExperience	class.PetStatus.php	/^	public $currentExperience;$/;"	v
+db	class.AccountInfo.php	/^		$this->db = $para_db;$/;"	v
+db	class.AccountInfo.php	/^	private $db;$/;"	v
+db	class.Group.php	/^		$this->db = $para_db;$/;"	v
+db	class.Group.php	/^	private $db;$/;"	v
+db	class.PetInfo.php	/^		$this->db = $para_db;$/;"	v
+db	class.PetInfo.php	/^	private $db;$/;"	v
+db	class.PetStatus.php	/^		$this->db = $para_db;$/;"	v
+db	class.PetStatus.php	/^	private $db;$/;"	v
+db	class.Post.php	/^		$this->db = $para_db;$/;"	v
+db	class.Post.php	/^	private $db;$/;"	v
+delete	class.Group.php	/^	public function delete()$/;"	f
+delete	class.Post.php	/^	public function delete($para_db)$/;"	f
+email	class.AccountInfo.php	/^		$this->email=null;$/;"	v
+email	class.AccountInfo.php	/^	public $email;$/;"	v
+excreta	class.PetStatus.php	/^		$this->excreta=0;$/;"	v
+excreta	class.PetStatus.php	/^	public $excreta;$/;"	v
+father	class.PetInfo.php	/^		$this->father='Designer';$/;"	v
+father	class.PetInfo.php	/^	public $father;$/;"	v
+feedC	class.PetStatus.php	/^		$this->feedC=10;$/;"	v
+feedC	class.PetStatus.php	/^	public $feedC;$/;"	v
+fields	class.Abstract.PersistentObj.php	/^	protected $fields;$/;"	v
+getByEmail	class.AccountInfo.php	/^	static public function getByEmail($para_email, $para_db)$/;"	f
+getByGroupid	class.Post.php	/^	static public function getByGroupid($para_id, $para_db)$/;"	f
+getById	class.AccountInfo.php	/^	static public function getById($para_id, $para_db)$/;"	f
+getById	class.Group.php	/^	static public function getById($para_id, $para_db)$/;"	f
+getById	class.Post.php	/^	static public function getById($para_id, $para_db)$/;"	f
+getByName	class.Group.php	/^	static public function getByName($para_name, $para_db)$/;"	f
+getByPetID	class.PetInfo.php	/^	static public function getByPetID($para_PetID, $para_db)$/;"	f
+getByPetID	class.PetStatus.php	/^	static public function getByPetID($para_PetID, $para_db)$/;"	f
+getByUserID	class.PetInfo.php	/^	static public function getByUserID($para_UserID, $para_db)$/;"	f
+getByUsername	class.AccountInfo.php	/^	static public function getByUsername($para_username, $para_db)$/;"	f
+getCommentsByPostIds	class.Post.php	/^	static public function getCommentsByPostIds($para_ids, $para_db)$/;"	f
+getLikedList	class.Post.php	/^	static public function getLikedList($para_username, $para_db)$/;"	f
+getListBySearch	class.Post.php	/^	static public function getListBySearch($para_keyword, $para_db)$/;"	f
+getListBySqlStmt	class.Post.php	/^	static private function getListBySqlStmt($stmt, $para_db)$/;"	f
+getListByUsername	class.Group.php	/^	static public function getListByUsername($para_groupname, $para_db)$/;"	f
+getListByUsername	class.Post.php	/^	static public function getListByUsername($para_id, $para_db)$/;"	f
+getReadedListByUserIds	class.Post.php	/^	static public function getReadedListByUserIds($para_id, $para_db)$/;"	f
+getUnreadLiked	class.Post.php	/^	static public function getUnreadLiked($para_username, $para_db)$/;"	f
+getUnreadedListByUserIds	class.Post.php	/^	static public function getUnreadedListByUserIds($para_id, $para_db)$/;"	f
+group	class.Group.php	/^			$group = new Group($para_db);$/;"	v
+group	class.Group.php	/^		$group = new Group($para_db);$/;"	v
+health	class.PetStatus.php	/^		$this->health=100;$/;"	v
+health	class.PetStatus.php	/^	public $health;$/;"	v
+id	class.AccountInfo.php	/^		$this->id=null;$/;"	v
+id	class.AccountInfo.php	/^	public $id;$/;"	v
+id	class.Group.php	/^		$this->id = null;$/;"	v
+id	class.Group.php	/^	public $id;$/;"	v
+id	class.Post.php	/^			$this->id = $new_lastinsertid;$/;"	v
+id	class.Post.php	/^		$this->id = null;$/;"	v
+id	class.Post.php	/^	public $id;$/;"	v
+idx	class.PetStatus.php	/^		$this->idx = null;$/;"	v
+idx	class.PetStatus.php	/^	public $idx;$/;"	v
+initWithArray	class.Abstract.PersistentObj.php	/^	public function initWithArray($para_array)$/;"	f
+initWithArray	class.Post.php	/^	public function initWithArray($para_ary)$/;"	f
+injectionC	class.PetStatus.php	/^		$this->injectionC=3;$/;"	v
+injectionC	class.PetStatus.php	/^	public $injectionC;$/;"	v
+isUserNameRepeat	class.AccountInfo.php	/^	static public function isUserNameRepeat($para_username, $para_db)$/;"	f
+key	class.Abstract.PersistentObj.php	/^			foreach($para_data as $key => $value){$/;"	v
+key	class.Abstract.PersistentObj.php	/^		foreach($para_array as $key=>$value){$/;"	v
+key	class.AccountInfo.php	/^			foreach($row as $key => $value){$/;"	v
+key	class.AccountInfo.php	/^		foreach($row as $key => $value){$/;"	v
+key	class.Group.php	/^			foreach($row as $key => $value){$/;"	v
+key	class.Group.php	/^		foreach($rows as $key => $value){$/;"	v
+key	class.PetInfo.php	/^			foreach($row as $key => $value){$/;"	v
+key	class.PetStatus.php	/^			foreach($row as $key => $value){$/;"	v
+key	class.Post.php	/^		foreach($para_ary as $key => $value){$/;"	v
+lastinsertid	class.AccountInfo.php	/^			$lastinsertid = $this->db->lastInsertId();$/;"	v
+lastinsertid	class.Group.php	/^			$lastinsertid = $this->db->lastInsertId();$/;"	v
+lastinsertid	class.PetInfo.php	/^			$lastinsertid = $this->db->lastInsertId();$/;"	v
+lastinsertid	class.PetStatus.php	/^			$lastinsertid = $this->db->lastInsertId();$/;"	v
+lastinsertid	class.Post.php	/^			$lastinsertid = $this->db->lastInsertId();$/;"	v
+level	class.PetStatus.php	/^		$this->level=0;$/;"	v
+level	class.PetStatus.php	/^	public $level;$/;"	v
+likes_row	class.Post.php	/^			$likes_row = $likes_stmt->fetch(PDO::FETCH_ASSOC);$/;"	v
+likes_sql	class.Post.php	/^			$likes_sql = sprintf(self::who_likes_sql, $post->id);$/;"	v
+likes_stmt	class.Post.php	/^			$likes_stmt = $para_db->query($likes_sql);$/;"	v
+list	class.Post.php	/^				$list = explode(",", $value);$/;"	v
+memberids	class.Post.php	/^		$memberids = array();$/;"	v
+memberids	class.Post.php	/^		$memberids = implode(",", $memberids);$/;"	v
+mid	class.Group.php	/^		$this->mid = null;$/;"	v
+mid	class.Group.php	/^	public $mid;$/;"	v
+mid	class.Post.php	/^		$this->mid = null;$/;"	v
+mid	class.Post.php	/^	public $mid;$/;"	v
+mother	class.PetInfo.php	/^		$this->mother='Designer';$/;"	v
+mother	class.PetInfo.php	/^	public $mother;$/;"	v
+name	class.Group.php	/^		$this->name = null;$/;"	v
+name	class.Group.php	/^	public $name;$/;"	v
+needClean	class.PetStatus.php	/^		$this->needClean = 0;$/;"	v
+needClean	class.PetStatus.php	/^	public $needClean;$/;"	v
+new_lastinsertid	class.Post.php	/^			$new_lastinsertid = $this->db->lastInsertId();$/;"	v
+owner	class.Post.php	/^		$this->owner = null;$/;"	v
+owner	class.Post.php	/^	public $owner;$/;"	v
+para_data	class.Abstract.PersistentObj.php	/^	function __construct($para_db, $para_data = null)$/;"	v
+para_id	class.Post.php	/^			$para_id = implode(",", $para_id);$/;"	v
+para_ids	class.Post.php	/^			$para_ids = implode(",", $para_ids);$/;"	v
+parameters	class.Group.php	/^			$parameters = (array)$parameters;$/;"	v
+password	class.AccountInfo.php	/^		$this->password=null;$/;"	v
+password	class.AccountInfo.php	/^	public $password;$/;"	v
+pet	class.PetInfo.php	/^		$pet = new PetInfo($para_db);$/;"	v
+petStatus	class.PetStatus.php	/^		$petStatus = new PetStatus($para_db);$/;"	v
+popular	class.Post.php	/^				$this->popular = count($list);$/;"	v
+popular	class.Post.php	/^		$this->popular = 0;$/;"	v
+popular	class.Post.php	/^	public $popular;$/;"	v
+post	class.Post.php	/^			$post = new Post($para_db);$/;"	v
+post	class.Post.php	/^		$post = new Post($para_db);$/;"	v
+privilege	class.AccountInfo.php	/^		$this->privilege=null;$/;"	v
+privilege	class.AccountInfo.php	/^	public $privilege;$/;"	v
+removeUsers	class.Group.php	/^	public function removeUsers($parameters)$/;"	f
+reply	class.Post.php	/^		$this->reply = null;$/;"	v
+reply	class.Post.php	/^	public $reply;$/;"	v
+requiredExperience	class.PetStatus.php	/^		$this->requiredExperience=10;$/;"	v
+requiredExperience	class.PetStatus.php	/^	public $requiredExperience;$/;"	v
+row	class.AccountInfo.php	/^		$row = $stmt->fetch(PDO::FETCH_ASSOC);$/;"	v
+row	class.AccountInfo.php	/^		$row = $stmt->fetchAll();$/;"	v
+row	class.Group.php	/^		$row = $stmt->fetch(PDO::FETCH_ASSOC);$/;"	v
+row	class.PetInfo.php	/^		$row = $stmt->fetch(PDO::FETCH_ASSOC);$/;"	v
+row	class.PetStatus.php	/^		$row = $stmt->fetch(PDO::FETCH_ASSOC);$/;"	v
+row	class.Post.php	/^		$row = $stmt->fetch(PDO::FETCH_ASSOC);$/;"	v
+rows	class.Group.php	/^		$rows = $stmt->fetch(PDO::FETCH_ASSOC);$/;"	v
+satiation	class.PetStatus.php	/^		$this->satiation=30;$/;"	v
+satiation	class.PetStatus.php	/^	public $satiation;$/;"	v
+save	class.Abstract.PersistentObj.php	/^	abstract public function save();$/;"	f
+save	class.AccountInfo.php	/^	public function save()$/;"	f
+save	class.Group.php	/^	public function save()$/;"	f
+save	class.PetInfo.php	/^	public function save()$/;"	f
+save	class.PetStatus.php	/^	public function save()$/;"	f
+save	class.Post.php	/^	public function save()$/;"	f
+sql	class.AccountInfo.php	/^			$sql = sprintf("INSERT INTO AccountInfo (username, email, password) values ('%s', '%s', '%s')",$this->username, $this->email, $this->password);$/;"	v
+sql	class.AccountInfo.php	/^			$sql = sprintf("UPDATE %s SET password=\\"%s\\", Pic=\\"%s\\", email=\\"%s\\", status=\\"%s\\" where id=%d", "AccountInfo", $this->password, $this->Pic ,$this->email, $this->status, $this->id);$/;"	v
+sql	class.AccountInfo.php	/^		$sql=sprintf("SELECT * from AccountInfo where email='%s'", $para_email);$/;"	v
+sql	class.AccountInfo.php	/^		$sql=sprintf("SELECT * from AccountInfo where id=%d", $para_id);$/;"	v
+sql	class.AccountInfo.php	/^		$sql=sprintf("SELECT * from AccountInfo where username='%s'", $para_username);$/;"	v
+sql	class.Group.php	/^			$sql = sprintf("INSERT INTO `Group` (mid, name) values (%d, '%s')",$this->mid, $this->name);$/;"	v
+sql	class.Group.php	/^			$sql = sprintf("UPDATE %s SET mid=%d, name=\\"%s\\" where id=%d", "`Group`", $this->mid, $this->name, $this->id);$/;"	v
+sql	class.Group.php	/^		$sql = "delete from IN_GROUP where gid=%d and mid in (%s)";$/;"	v
+sql	class.Group.php	/^		$sql = "delete from `Group` where id={$this->id}";$/;"	v
+sql	class.Group.php	/^		$sql = "insert into IN_GROUP (mid, gid) values";$/;"	v
+sql	class.Group.php	/^		$sql = sprintf("select * from `Group` where mid=%d and id=%d", $_SESSION["id"], $para_name);$/;"	v
+sql	class.Group.php	/^		$sql = sprintf("select `Group`.* from `Group` inner join AccountInfo on Group.mid=AccountInfo.id where AccountInfo.username=\\"%s\\"", $para_groupname);$/;"	v
+sql	class.Group.php	/^		$sql = sprintf($sql,$this->id, $values);$/;"	v
+sql	class.Group.php	/^		$sql=sprintf("SELECT `Group`.* from `Group` where `Group`.id=%d", $para_id);$/;"	v
+sql	class.PetInfo.php	/^			$sql = sprintf("INSERT INTO PetInfo (UserID, Name, Gender, Introduction) values ('%s', '%s', '%d', '%s')",$this->UserID, $this->Name, $this->Gender, $this->Introduction);$/;"	v
+sql	class.PetInfo.php	/^			$sql = sprintf("UPDATE %s SET Name=\\"%s\\", father=\\"%s\\", mother=\\"%s\\", Spouse=\\"%s\\", Birthplace=\\"%s\\", Introduction=\\"%s\\" where PetID=%d", "PetInfo", $this->Name, $this->father ,$this->mother, $this->Spouse, $this->Birthplace, $this->Introduction, $this->PetID);$/;"	v
+sql	class.PetInfo.php	/^		$sql=sprintf("SELECT * from PetInfo where PetID=%d", $para_PetID);$/;"	v
+sql	class.PetInfo.php	/^		$sql=sprintf("SELECT * from PetInfo where UserID='%d'", $para_UserID);$/;"	v
+sql	class.PetStatus.php	/^			$sql = sprintf("INSERT INTO PetStatus (PetID, type) values (\\"%d\\", '%s')",$this->PetID, $this->type);$/;"	v
+sql	class.PetStatus.php	/^			$sql =sprintf("UPDATE %s SET currentExperience=\\"%d\\", requiredExperience=\\"%d\\", level=\\"%d\\", status=\\"%s\\", health=\\"%f\\", satiation=\\"%d\\", cleanliness=\\"%d\\", excreta=\\"%d\\", needClean=\\"%d\\", injectionC=\\"%d\\", feedC=\\"%d\\" where PetID=%d", "PetStatus", $this->currentExperience, $this->requiredExperience, $this->level, $this->status, $this->health, $this->satiation, $this->cleanliness, $this->excreta, $this->needClean, $this->injectionC, $this->feedC, $this->PetID);$/;"	v
+sql	class.PetStatus.php	/^		$sql=sprintf("SELECT * from PetStatus where PetID=%d", $para_PetID);$/;"	v
+sql	class.Post.php	/^			$sql = sprintf("INSERT INTO %s (mid, content, type, reply) VALUES ('%s', '%s', '%s', '%s')","".self::TABLE_NAME."", $this->mid, $this->content, $this->type, $this->reply);$/;"	v
+sql	class.Post.php	/^			$sql = sprintf("UPDATE %s SET content=\\"%s\\", type=\\"%s\\"  WHERE id=\\"%s\\"", "".self::TABLE_NAME."", $this->content, $this->type, $this->id);$/;"	v
+sql	class.Post.php	/^			$sql = sprintf(self::entry_sql." WHERE ".self::TABLE_NAME.".reply in (%s) ORDER BY ".self::TABLE_NAME.".time ASC", $para_ids);$/;"	v
+sql	class.Post.php	/^		$sql = sprintf("SELECT AccountInfo.id from AccountInfo, IN_GROUP WHERE IN_GROUP.gid=%d AND IN_GROUP.mid=AccountInfo.id", $para_id);$/;"	v
+sql	class.Post.php	/^		$sql = sprintf(self::entry_sql . " WHERE ".self::TABLE_NAME.".id in (SELECT LIKE_POST.pid from LIKE_POST WHERE mid=(SELECT id from AccountInfo WHERE username=\\"%s\\") AND ".self::TABLE_NAME.".reply=0 and Post.id not in (SELECT pid from READ_POST)) ORDER BY ".self::TABLE_NAME.".time ASC", $para_username);$/;"	v
+sql	class.Post.php	/^		$sql = sprintf(self::entry_sql . " WHERE ".self::TABLE_NAME.".id in (SELECT LIKE_POST.pid from LIKE_POST WHERE mid=(SELECT id from AccountInfo WHERE username=\\"%s\\")) ORDER BY ".self::TABLE_NAME.".time ASC", $para_username);$/;"	v
+sql	class.Post.php	/^		$sql = sprintf(self::entry_sql . " WHERE Post.content like \\"%%%s%%\\" or AccountInfo.username like \\"%%%s%%\\" ORDER BY ".self::TABLE_NAME.".time ASC", $para_keyword, $para_keyword);$/;"	v
+sql	class.Post.php	/^		$sql = sprintf(self::entry_sql . " WHERE reply=0 AND mid in (%s)", $memberids);$/;"	v
+sql	class.Post.php	/^		$sql=sprintf("delete  from ".self::TABLE_NAME." WHERE id=%d", $this->id);$/;"	v
+sql	class.Post.php	/^		$sql=sprintf(self::entry_sql." WHERE ".self::TABLE_NAME.".id=%d", $para_id);$/;"	v
+sql	class.Post.php	/^		$sql=sprintf(self::entry_sql." WHERE AccountInfo.id in (%s) AND ".self::TABLE_NAME.".reply=0 and Post.id in (SELECT pid from READ_POST) ORDER BY ".self::TABLE_NAME.".time ASC", $para_id);$/;"	v
+sql	class.Post.php	/^		$sql=sprintf(self::entry_sql." WHERE AccountInfo.id in (%s) AND ".self::TABLE_NAME.".reply=0 and Post.id not in (SELECT pid from READ_POST) ORDER BY ".self::TABLE_NAME.".time ASC", $para_id);$/;"	v
+sql	class.Post.php	/^		$sql=sprintf(self::entry_sql." WHERE AccountInfo.username=\\"%s\\" AND ".self::TABLE_NAME.".reply=0 ORDER BY ".self::TABLE_NAME.".time ASC", $para_id);$/;"	v
+status	class.AccountInfo.php	/^			$this->status = "Actived";$/;"	v
+status	class.AccountInfo.php	/^		$this->status=null;$/;"	v
+status	class.AccountInfo.php	/^	public $status;$/;"	v
+status	class.PetStatus.php	/^		$this->status='健康';$/;"	v
+status	class.PetStatus.php	/^	public $status;$/;"	v
+stmt	class.AccountInfo.php	/^			$stmt = $this->db->query($sql);$/;"	v
+stmt	class.AccountInfo.php	/^		$stmt = $para_db->prepare('select username from AccountInfo where username=:name');$/;"	v
+stmt	class.AccountInfo.php	/^		$stmt = $para_db->query($sql);$/;"	v
+stmt	class.Group.php	/^			$stmt = $this->db->query($sql);$/;"	v
+stmt	class.Group.php	/^		$stmt = $para_db->query($sql);$/;"	v
+stmt	class.PetInfo.php	/^			$stmt = $this->db->query($sql);$/;"	v
+stmt	class.PetInfo.php	/^		$stmt = $para_db->query($sql);$/;"	v
+stmt	class.PetStatus.php	/^			$stmt = $this->db->query($sql);$/;"	v
+stmt	class.PetStatus.php	/^		$stmt = $para_db->query($sql);$/;"	v
+stmt	class.Post.php	/^			$stmt = $para_db->query($sql);$/;"	v
+stmt	class.Post.php	/^		$stmt = $para_db->query($sql);$/;"	v
+time	class.Post.php	/^		$this->time = null;$/;"	v
+time	class.Post.php	/^	public $time;$/;"	v
+type	class.PetStatus.php	/^		$this->type=null;$/;"	v
+type	class.PetStatus.php	/^	public $type;$/;"	v
+type	class.Post.php	/^		$this->type = null;$/;"	v
+type	class.Post.php	/^	public $type;$/;"	v
+user	class.AccountInfo.php	/^		$user = new AccountInfo($para_db);$/;"	v
+username	class.AccountInfo.php	/^		$this->username=null;$/;"	v
+username	class.AccountInfo.php	/^	public $username;$/;"	v
+validateName	class.PetInfo.php	/^	static public function validateName($para_Name)$/;"	f
+validatePassword	class.AccountInfo.php	/^	static public function validatePassword($para_password)$/;"	f
+validateUsername	class.AccountInfo.php	/^	static public function validateUsername($para_username)$/;"	f
+values	class.Group.php	/^		$values = array();$/;"	v
+values	class.Group.php	/^		$values = implode(",",$values);$/;"	v
+who_likes	class.Post.php	/^		$this->who_likes = null;$/;"	v
+who_likes	class.Post.php	/^	public $who_likes;$/;"	v

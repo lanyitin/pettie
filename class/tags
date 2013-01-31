@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Component	class.Component.php	/^class Component$/;"	c
+PDAO	class.DataBase.php	/^class PDAO extends PDO$/;"	c
+Request	class.Request.php	/^class Request$/;"	c
+Response	class.Response.php	/^class Response$/;"	c
+__construct	class.Component.php	/^    function __construct($para_indexes)$/;"	f
+__construct	class.DataBase.php	/^	public function __construct($dsn, $username='', $password='', $driver_options=array()) {$/;"	f
+__construct	class.Request.php	/^	function __construct($para_request_str, $parameters = array())$/;"	f
+__construct	class.Response.php	/^	function __construct($para_code, $para_content)$/;"	f
+__get	class.Component.php	/^    public function __get($para_key)$/;"	f
+__set	class.Component.php	/^    public function __set($para_key, $para_value)$/;"	f
+apiMode	class.Request.php	/^			$this->apiMode = true;$/;"	v
+apiMode	class.Request.php	/^	public $apiMode = false;$/;"	v
+ary	class.Request.php	/^			$ary = array_slice($ary,1);$/;"	v
+ary	class.Request.php	/^		$ary = array_values($ary);$/;"	v
+ary	class.Request.php	/^		$ary = explode("\/", $para_request_str);$/;"	v
+content	class.Response.php	/^		$this->content = $para_content;$/;"	v
+content	class.Response.php	/^	public $content;$/;"	v
+errorCode	class.Response.php	/^		$this->errorCode = $para_code;$/;"	v
+errorCode	class.Response.php	/^	public $errorCode;$/;"	v
+exception_handler	class.DataBase.php	/^	public static function exception_handler($exception) {$/;"	f
+execute	class.Request.php	/^	public function execute()$/;"	f
+getInstance	class.DataBase.php	/^	public static function getInstance($connect_string = null , $username = null , $password = null)$/;"	f
+getVariables	class.Component.php	/^    public function getVariables()$/;"	f
+instance	class.DataBase.php	/^	private static $instance = null;$/;"	v
+isSuccessed	class.Response.php	/^	public function isSuccessed()$/;"	f
+key	class.Request.php	/^		foreach($parameters as $key=>$value){$/;"	v
+key	class.Request.php	/^		foreach($this->url_parameters as $key=>$value){$/;"	v
+parameters	class.Request.php	/^	function __construct($para_request_str, $parameters = array())$/;"	v
+parameters	class.Request.php	/^	public $parameters = null;$/;"	v
+presenter	class.Request.php	/^			$presenter = new $presenterClassName;$/;"	v
+presenterClassName	class.Request.php	/^			$presenterClassName = "Presenter" . ucfirst($this->presenterName);$/;"	v
+presenterFilePath	class.Request.php	/^		$presenterFilePath = PRESENTER_PATH."class.".ucfirst($this->presenterName).".php";$/;"	v
+presenterName	class.Request.php	/^		$this->presenterName = htmlentities($ary[0]);$/;"	v
+presenterName	class.Request.php	/^	public $presenterName = null;$/;"	v
+query	class.DataBase.php	/^	public function query($sql)$/;"	f
+response	class.Request.php	/^			$response = $presenter->handle_request($this);$/;"	v
+stmt	class.DataBase.php	/^		$stmt =  parent::query($sql) or die(print_r($this->errorInfo()).$sql);$/;"	v
+strict_mode	class.Component.php	/^	    $this->strict_mode = true;$/;"	v
+strict_mode	class.Component.php	/^    private $strict_mode = false;$/;"	v
+url_parameters	class.Request.php	/^		$this->url_parameters = array_slice($ary, 1);$/;"	v
+url_parameters	class.Request.php	/^	public $url_parameters = null;$/;"	v
+username	class.DataBase.php	/^	public function __construct($dsn, $username='', $password='', $driver_options=array()) {$/;"	v
+username	class.DataBase.php	/^	public static function getInstance($connect_string = null , $username = null , $password = null)$/;"	v
+variables	class.Component.php	/^	$this->variables = new ArrayObject();$/;"	v
+variables	class.Component.php	/^    private $variables;$/;"	v

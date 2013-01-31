@@ -1,0 +1,52 @@
+<script language="javascript">
+
+function check_data(){
+  if(document.getElementById("username").value.length==0){
+    alert("Please enter Username");
+    return false;
+  }
+  
+  if(document.getElementById("username").value.length>10){
+    alert("Username must be less then 10 word");
+    return false;
+  }
+  if(document.getElementById("password").value.length==0){
+    alert("Please enter password");
+    return false;
+  }
+  
+  if(document.getElementById("password").value.length>10){
+    alert("Passwor must be less then 10 word");
+    return false;
+  }
+  
+  if(document.getElementById("re_password").value.length>10){
+    alert("Re-enter password must be less than 10 word");
+    return false;
+  }
+  
+  if(document.getElementById("password").value!=document.getElementById("re_password").value){
+    alert("Passwor and Re-enter password must be same");
+    return false;
+  }
+  if(document.getElementById("email").value.length==0){
+    alert("Please enter Email ");
+    return false;
+  }
+  if(document.getElementById("email").value.str.indexOf(".") > 2&&document.getElementById("email").value.str.indexOf("@") > 0){
+    alert("Please enter vaild Email ");
+    return false;  
+  }
+}
+</script>
+
+	<form action="<?php echo PETTIE_URL;?>member/register/" method="POST" onSubmit="return check_data()">
+<table>
+    <tr><th>Username :</th><td><input type="text" name="username" id="username"/></td></tr>
+    <tr><th>Password :</th><td><input type="password" name="password" id="password"/></td></tr>
+    <tr><th>Re-enter-Password :</th><td><input type="password" name="re_password"id="re_password"/></td></tr>
+    <tr><th>Email :</th><td><input type="email" name="email"/></td></tr>
+</table>
+    <input type="submit" value="Register"/>
+  <input type="button" onClick="location.href='<?php echo PETTIE_URL;?>'" value="Cancle"/>
+</form>

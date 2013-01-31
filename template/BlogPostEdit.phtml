@@ -1,0 +1,15 @@
+<form method="POST" action="">
+	<select name="type" id="type">
+	<?php foreach(array("喜歡", "分享", "說", "問") as $elem) {
+		if ($tpl_post->type == $elem) {
+			echo sprintf("<option value=\"%s\" selected=\"selected\">%s</option>", $elem, $elem);
+		} else {
+			echo sprintf("<option value=\"%s\">%s</option>", $elem, $elem);
+		}
+	}
+	?>
+	</select>
+<textarea name="content"><?php echo $this->get("post")->content;?></textarea>
+	<input type="submit"/>
+	<input type="reset" value="Cancel"/>
+</form>

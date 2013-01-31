@@ -1,0 +1,6 @@
+<?php $circle = $this->get("circle");?>
+<form action="<?php echo PETTIE_URL;?>circle/edit/<?php echo $circle->id;?>" method="post" accept-charset="utf-8">
+	<input name="new_name" id="name" type="text"/ value="<?php echo $circle->name;?>">
+	<input type="hidden" name="old_name" value="<?php echo $circle->name;?>"></p>
+	<input type="submit" value="Continue &rarr;"></p>
+</form>

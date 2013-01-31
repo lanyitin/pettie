@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+<link href="<?php echo PETTIE_URL;?>css/login_register.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+  function check_data_login(){
+    if(document.getElementById("loginusername").value.length==0){
+      alert("User name can not be empty");
+      return false;
+    }
+    
+    if(document.getElementById("loginpassword").value.length==0){
+      alert("Password can not be empty");
+      return false;
+    }
+}
+
+
+function check_data_register(){
+  if(document.getElementById("username").value.length==0){
+    alert("Please enter Username");
+    return false;
+  }
+  
+  if(document.getElementById("username").value.length>10){
+    alert("Username must be less then 10 word");
+    return false;
+  }
+  if(document.getElementById("password").value.length==0){
+    alert("Please enter password");
+    return false;
+  }
+  
+  if(document.getElementById("password").value.length>10){
+    alert("Passwor must be less then 10 word");
+    return false;
+  }
+  
+  if(document.getElementById("re_password").value.length>10){
+    alert("Re-enter password must be less than 10 word");
+    return false;
+  }
+  
+  if(document.getElementById("password").value!=document.getElementById("re_password").value){
+    alert("Passwor and Re-enter password must be same");
+    return false;
+  }
+  if(document.getElementById("email").value.length==0){
+    alert("Please enter Email ");
+    return false;
+  }
+  if(document.getElementById("email").value.str.indexOf(".") > 2&&document.getElementById("email").value.str.indexOf("@") > 0){
+    alert("Please enter vaild Email ");
+    return false;  
+  }
+}
+</script>
+</head>
+<body>
+<div id="qwuadrantall">
+	<div id="qwuadrant2">
+		<img  src="<?php echo PETTIE_URL;?>images/register_logo.png" alt="logo"/>
+	</div>
+
+	<div id="qwuadrant1">
+		<form action="<?php echo PETTIE_URL?>member/login/" method="POST" onSubmit="return check_data_login()" id="login_form">
+		  <table>
+		  <tr><th>Username:</th><td><input name="username" type="text" id="loginusername"/></td></tr>
+		  <tr><th>Password:</th><td><input name="password" type="password" id="loginpassword"/></td></tr>
+		  </table>
+		  <input type="button" onClick="location.href=''" value="Cancel" id="login_form_button"/>
+		  <input type="submit" value="Login" id="login_form_button"/>
+		</form>
+	</div>
+		
+	<div id="qwuadrant3">
+		<img  src="<?php echo PETTIE_URL;?>images/register_pic.png" alt="logo"/>
+	</div>
+
+	<div id="qwuadrant4">
+		<h1 id="resister_title">免費註冊</h1>
+		<div id="register_table">
+		<form action="<?php echo PETTIE_URL;?>member/register/" method="POST" onSubmit="return check_data_register()" id="register_form">
+			<table>
+				<tr><th>Username :</th><td><input type="text" name="username" id="username"/></td></tr>
+				<tr><th>Password :</th><td><input type="password" name="password" id="password"/></td></tr>
+				<tr><th>Re-enter-Password :</th><td><input type="password" name="re_password"id="re_password"/></td></tr>
+				<tr><th>Email :</th><td><input type="email" name="email"/></td></tr>
+			</table>
+			<input type="submit" value="Register" id="register_form_button"/>
+		</form>
+		<div>
+	</div>
+</div>
+</body>

@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteBase /
+#RewriteBase /pettie/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule  ^(.*)$ index.php?request=$1&%{QUERY_STRING} [PT,L]

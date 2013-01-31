@@ -1,0 +1,28 @@
+﻿<?php foreach($this->get("posts") as $post){?>
+<div class="post-entry">
+	<?php echo $post->time;?>[<?php echo $post->type;?>]<?php echo $post->content;?><br />
+	有<?php echo (int)$post->popular;?>人喜歡此篇文章
+	<?php if(in_array($_SESSION["id"], $post->who_likes)){?>
+		<a href="<?php echo PETTIE_URL;?>blog/post/unlike/<?php echo $post->id;?>">UnLike</a>
+	<?php }else{?>
+		<a href="<?php echo PETTIE_URL;?>blog/post/like/<?php echo $post->id;?>">Like</a>
+	<?php }?>
+	<a href="<?php echo PETTIE_URL; ?>blog/post/Comment/<?php echo $post->id;?>">Comment</a>
+	<?php if($post->mid === $_SESSION["id"]){ ?>
+		<a href="<?php echo PETTIE_URL; ?>blog/post/edit/<?php echo $post->id;?>">Edit</a>
+		<a href="<?php echo PETTIE_URL; ?>blog/post/delete/<?php echo $post->id;?>">Delete</a>
+	<?php }//session?>
+	<div class="comment-list" style="margin-left:30px;">
+	<?php foreach($this->get("comments") as $comment){ ?>
+		<?php if($comment->reply === $post->id){ ?>
+			<div class="comment-entry">
+		<?php echo $comment->time;?>[<?php echo $comment->type;?>]<?php echo $comment->content;?> post by <?php echo $comment->owner;?>
+				<?php if($comment->mid === $_SESSION["id"]){ ?>
+					<a href="<?php echo PETTIE_URL; ?>blog/comment/delete/<?php echo $comment->id;?>">Delete</a>
+				<?php }//session?>
+			</div>
+		<?php } //if comment post?>
+	<?php }//comments?>
+	</div>
+</div>
+<?php }//posts?>

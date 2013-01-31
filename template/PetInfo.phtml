@@ -1,0 +1,105 @@
+﻿<script type="text/javascript">
+function PetInfoturn(){
+	//$('.flip-card').click(function (evt) {
+		//evt.stopPropagation();
+		//evt.cancelBubble = true;
+		//console.log(evt);
+		//console.log(evt.srcElement, this);
+		//if (evt.srcElement == this) {
+			if ($('.flip-card').attr('data-face') == 'front') {
+				$('.flip-card').css('-webkit-transform', 'rotateY(-180deg)');
+				$('.flip-card').attr('data-face', 'back');
+				$(".front").css("display", "none");
+				$(".back").css("display", "block");
+			}
+			else {
+				$('.flip-card').css('-webkit-transform', 'rotateY(0deg)');
+				$('.flip-card').attr('data-face', 'front');
+				$(".front").css("display", "block");
+				$(".back").css("display", "none");
+			}
+		//}
+		
+	//});
+}
+$(function(){
+	if(pettie.username!=pettie.sb_name){
+		$("#petInfo_identity").html("");
+	}
+});
+</script>
+
+<div id="PetInfobg">
+	<div class="flip-container">
+		<div class="flip-card" data-face='front'>
+			<div class="front face">
+				<div id="PetInfobgfront">
+						<p>
+						<table id="tablefront" cellpadding="20" Cellspacing="10">	
+							<tr>
+								<td>姓名:</td>
+								<td><?php echo $tpl_PetInfo->Name;?></td>
+							</tr>
+
+							<tr>
+								<td>生日:</td>
+								<td><?php echo substr("$tpl_PetInfo->Birthday;",0,-9);?></td>
+							</tr>
+	
+							<tr>	
+								<td>性別:</td>
+								<td><?php if($tpl_PetInfo->Gender == 1){
+									echo "男";
+									}else if($tpl_PetInfo->Gender == 0){
+									echo "女";
+									}?>
+								</td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td>狀態 :</td>
+								<td><?php echo $tpl_PetInfo->status;?></td>
+							</tr>
+						</table>
+						</p>
+						<button id="PetInfoTurnfront" onClick="PetInfoturn()">Turn</button>
+				</div>
+			</div>
+			<div class="back face">
+				<div id="PetInfobgback">
+
+						<p>
+						<table id="tableback">
+							<tr>
+								<td>父:</td>
+								<td><input id="father" name="father" type="text" size="15" value='<?php echo $tpl_PetInfo->father?>'/></td>
+								<td>母:</td>
+								<td><input id="mother" name="mother" type="text" size="15" value='<?php echo $tpl_PetInfo->mother;?>'/><br/></td>
+							</tr>
+							<tr>
+								<td>配偶:</td>
+								<td><input id="Spouse" name="Spouse" type="text" size="15" value='<?php echo $tpl_PetInfo->Spouse;?>'/><br/></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>出生地:</td>
+								<td><input id="Birthplace" name="Birthplace" type="text" size="15" value='<?php echo $tpl_PetInfo->Birthplace;?>'/></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td align="top">介紹:</td>
+								<td colspan="3"><textarea id="Introduction" name="Introduction" Cols="30" Rows="6"><?php 	$Pet_Introduction = (string)$tpl_PetInfo->Introduction;
+										$Pet_Introduction = str_replace("<br/>", "\n", $Pet_Introduction);
+										echo $Pet_Introduction;?></textarea></td>
+							</tr>
+						</table>
+						</p>
+						<button id="PetInfoTurnback" onClick="PetInfoturn()">Turn</button>
+								
+						<span id="petInfo_identity"><button id="PetInfoSubmitback" onClick="PetInfosubmit()">Submit</button></span>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

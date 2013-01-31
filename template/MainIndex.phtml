@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pettie 寵心啟動</title>
+		<meta charset="UTF-8" />
+		<link href="http://code.jquery.com/ui/1.8.22/themes/base/jquery-ui.css" type="text/css" rel="stylesheet"/>
+		<link href="<?php echo PETTIE_URL;?>css/style.css" type="text/css" rel="stylesheet"/>
+		<link href="<?php echo PETTIE_URL;?>css/catch.css" type="text/css" rel="stylesheet"/>
+		<link href="<?php echo PETTIE_URL;?>css/guessPic_style.css" rel="stylesheet" type="text/css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+		<script src="<?php echo PETTIE_URL;?>js/libui.js"></script>			
+		<script src="<?php echo PETTIE_URL;?>js/guess.js"></script>
+		<script src="<?php echo PETTIE_URL;?>js/tagcanvas.js"></script>
+		<script src="<?php echo PETTIE_URL;?>js/catch.js"></script>
+		<script src="<?php echo PETTIE_URL;?>js/actions.js"></script>
+		<script src="<?php echo PETTIE_URL;?>js/pettie.js"></script>
+		<script>
+			pettie.userid = <?php echo $tpl_profile["id"];?>;
+			pettie.username = "<?php echo $tpl_profile["username"];?>";
+			pettie.sb_name = "<?php echo $tpl_sb->username;?>";
+			pettie.url = "<?php echo PETTIE_URL;?>";
+			pettie.pet.data = JSON.parse('<?php echo json_encode($tpl_PetInfo);?>');
+		</script>
+	</head>
+	<body>
+		<div id="loginBlock"><?php echo $tpl_loginBlock;?></div>
+		<div id="Banner">
+			<div id="Banner_inner">
+				<div id="Banner_pettie">
+					<img  src="<?php echo PETTIE_URL;?>images/logo.png" alt="logo"/>
+				</div>
+				<ul>
+					<li>
+					<img src="<?php echo PETTIE_URL;?>images/myPage.png" alt="myPage" class="Banner_titleimg"/>
+					<a href="<?php echo PETTIE_URL;?>main/index/<?php echo $tpl_profile['username'];?>/" class="Banner_titlewrd">個人頁面</a>
+					</li>
+
+					<li>
+					<img src="<?php echo PETTIE_URL;?>images/setting.png" alt="setting" class="Banner_titleimg"/>
+					<a href="#" onClick="modify_setting()" class="Banner_titlewrd">設定</a>
+					</li>
+
+					<li>
+					<img src="<?php echo PETTIE_URL;?>images/friends.png" alt="friends" class="Banner_titleimg"/>
+					<a href="#" onClick="modify_group()" class="Banner_titlewrd">編輯朋友</a>
+					</li>
+
+					<li>
+					<img src="<?php echo PETTIE_URL;?>images/mail.png" alt="mail" class="Banner_titleimg"/>
+					<a id="notifyBtn" href="#" onClick="pettie.notify.onNotifyBtnClick()" class="Banner_titlewrd">通知</a>
+					</li>
+				</ul>
+				<div id="Banner_feet" >
+					<img src="<?php echo PETTIE_URL;?>images/Banner_feet.png" alt="banner_feet"/>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="container">
+			<div id="Background">
+				<div id="left">
+					<div id="top">
+						<div id="PetArea">
+							<canvas id="PetView" width="600" height="520"></canvas>
+						</div>
+					</div>
+					<div id="buttom">
+						<div id="Profile">
+							<div id="profile">
+								<?php include(TPL_PATH."Profile.phtml");?>
+							</div>
+							<div id="buttonaddfriend">
+								<?php if($tpl_isFriend==false && $tpl_isOwn==false) { ?>
+								<a href="javascript://" class="addFriendBtn">
+									<img src="<?php echo PETTIE_URL;?>images/addfriend.png" alt="addFriend" onClick="addfriendbtnhide()" id="addfriendbtnhideimg"/>
+								</a>
+								<?php } ?>
+							</div>
+							<div class="clear"></div>
+						</div>		
+						<div id="Friends">
+							<div id="FriendsTitle">
+								<img src="<?php echo PETTIE_URL;?>images/friend.png" alt="friend"/>
+								&nbsp;more
+							</div>
+							<div id="FriendsList">
+								<ul>
+									<?php echo $tpl_friends;?>
+								</ul>
+							</div>
+							<div id="searchfriend">
+								<img id="louder" src="<?php echo PETTIE_URL;?>images/louder.png" alt="speaker"/>
+								<div id="searchfriendarea">
+									找朋友:<br>
+									
+									<input type="text" name="friendname" size="15" id="searchFriend" >
+									<input id="searchfriendbutton" type="image" src="<?php echo PETTIE_URL;?>images/search1.png" onclick="searchfriend()">
+									
+
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div id="right">
+					<div id="MessageBoard">
+						<?php if($tpl_isLogin){ ?>
+						<div id="say_search">
+							<div id="tabs" style="float:left">
+								<ul style="list-style:none;width:350px;;float:left">
+									<?php if($tpl_isOwn){?>
+									<li style="display:block;float:left;background-color:#FAB3B3"><a href="<?php echo PETTIE_URL;?>blog/post">Say</a></li>
+									<?php }?>
+									<li style="display:block;float:left;background-color:#93E68D"><a href="<?php echo PETTIE_URL;?>blog/search">Search</a></li>
+								</ul>
+								<div style="float:left;width:370px;height:75px;"></div>
+							</div>
+							<script>
+								$(function() {
+									$("#tabs div:gt(0)").css("display", "none");
+									$("#tabs ul li").click(function(e){
+										var self = this;
+										$("#tabs div")
+										.load($(this).children("a")[0].href, function(){
+											$("#tabs div").css("background-color", $(self).css("background-color"));
+										});
+										$("#tabs textarea").val();
+										return false;
+									});
+								});
+								$("#tabs div")
+								.css("background-color", $("#tabs ul li:eq(0)").css("background-color"))
+								.load($("#tabs ul li:eq(0) a")[0].href);
+							</script>
+						</div>
+						<ul id="message_list">
+							<li data-action="all"><img src="<?php echo PETTIE_URL;?>images/list_all.png" alt="list_all"/></li>
+							<?php if ($tpl_isOwn) { ?>
+							<li data-action="friends"><img src="<?php echo PETTIE_URL;?>images/list_friend.png" alt="list_friend"/></li>
+							<li data-action="liked"><img src="<?php echo PETTIE_URL;?>images/list_like.png" alt="list_like"/></li>
+							<li data-action="plus"><img src="<?php echo PETTIE_URL;?>images/list_plus.png" alt="list_plus"/></li>
+							<?php }?>
+						</ul>
+						<div id="post-list"></div>
+						<?php } ?>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</body>
+</html>

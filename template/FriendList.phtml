@@ -1,0 +1,8 @@
+<?php foreach($this->get("friends") as $friend){ ?>
+<li>
+	<a href="<?php echo PETTIE_URL."main/index/".$friend->username."/" ;?>">
+		<img class="avator" src="<?php echo PETTIE_URL . $friend->Pic;?>" alt=""/>
+		<p class="username"><?php echo $friend->username;?></p>
+	</a>
+</li>
+<?php } ?>

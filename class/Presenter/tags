@@ -1,0 +1,296 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+IPresenter	Interface.Presenter.php	/^interface IPresenter$/;"	i
+PET	class.Main.php	/^		$PET = $response->content;$/;"	v
+PET	class.Pet.php	/^		$PET = $response->content;$/;"	v
+Presenter	class.Presenter.php	/^abstract class Presenter$/;"	c
+PresenterAdmin	class.Admin.php	/^class PresenterAdmin extends Presenter$/;"	c
+PresenterBlog	class.Blog.php	/^class PresenterBlog extends Presenter$/;"	c
+PresenterCircle	class.Circle.php	/^class PresenterCircle extends Presenter$/;"	c
+PresenterFriend	class.Friend.php	/^class PresenterFriend extends Presenter$/;"	c
+PresenterGame	class.Game.php	/^class PresenterGame extends Presenter$/;"	c
+PresenterMain	class.Main.php	/^class PresenterMain extends Presenter$/;"	c
+PresenterMember	class.Member.php	/^class PresenterMember extends Presenter$/;"	c
+PresenterPet	class.Pet.php	/^class PresenterPet extends Presenter$/;"	c
+__construct	class.Admin.php	/^	function __construct(){$/;"	f
+__construct	class.Blog.php	/^	function __construct()$/;"	f
+__construct	class.Circle.php	/^	function __construct()$/;"	f
+__construct	class.Friend.php	/^	function __construct()$/;"	f
+__construct	class.Game.php	/^	function __construct()$/;"	f
+__construct	class.Member.php	/^	function __construct()$/;"	f
+__construct	class.Pet.php	/^	function __construct()$/;"	f
+__construct	class.Presenter.php	/^	function __construct()$/;"	f
+allowedExts	class.Member.php	/^			$allowedExts = array("jpg", "jpeg", "gif", "png");$/;"	v
+api_active	class.Member.php	/^	protected function api_active($parameters)$/;"	f
+api_adopt	class.Pet.php	/^	protected function api_adopt($parameters)$/;"	f
+api_changeStatus	class.Pet.php	/^	protected function api_changeStatus($parameters){$/;"	f
+api_clean	class.Pet.php	/^	protected function api_clean($parameters){$/;"	f
+api_drain	class.Pet.php	/^	protected function api_drain($parameters){$/;"	f
+api_editPassword	class.Member.php	/^	protected function api_editPassword($parameters)$/;"	f
+api_exercise	class.Pet.php	/^	protected function api_exercise($parameters){$/;"	f
+api_feed	class.Pet.php	/^	protected function api_feed($parameters){$/;"	f
+api_forget	class.Member.php	/^	protected function api_forget($parameters)$/;"	f
+api_friends_list	class.Blog.php	/^	protected function api_friends_list($parameters)$/;"	f
+api_friends_unread_list	class.Blog.php	/^	protected function api_friends_unread_list($parameters)$/;"	f
+api_info	class.Pet.php	/^	protected function api_info($parameters) {$/;"	f
+api_injection	class.Pet.php	/^	protected function api_injection($parameters){$/;"	f
+api_isLogin	class.Member.php	/^	protected function api_isLogin($parameters)$/;"	f
+api_isUserNameRepeat	class.Member.php	/^	protected function api_isUserNameRepeat($parameters)$/;"	f
+api_list	class.Blog.php	/^	protected function api_list($parameters)$/;"	f
+api_list	class.Circle.php	/^	public function api_list($parameters)$/;"	f
+api_list	class.Friend.php	/^	protected function api_list($parameters)$/;"	f
+api_list_pendding	class.Friend.php	/^	protected function api_list_pendding($parameters)$/;"	f
+api_login	class.Member.php	/^	protected function api_login($parameters)$/;"	f
+api_logout	class.Member.php	/^	protected function api_logout($parameters)$/;"	f
+api_member_list	class.Circle.php	/^	public function api_member_list($parameters) {$/;"	f
+api_post	class.Blog.php	/^	protected function api_post($parameters){$/;"	f
+api_post_comment	class.Blog.php	/^	protected function api_post_comment($parameters)$/;"	f
+api_post_delete	class.Blog.php	/^	protected function api_post_delete($parameters)$/;"	f
+api_post_edit	class.Blog.php	/^	protected function api_post_edit($parameters)$/;"	f
+api_post_like	class.Blog.php	/^	protected function api_post_like($parameters)$/;"	f
+api_post_unlike	class.Blog.php	/^	protected function api_post_unlike($parameters)$/;"	f
+api_profile	class.Member.php	/^	protected function api_profile($parameters)$/;"	f
+api_profile_edit	class.Member.php	/^	protected function api_profile_edit($parameters)$/;"	f
+api_register	class.Member.php	/^	protected function api_register($parameter)$/;"	f
+api_unread_list	class.Blog.php	/^	protected function api_unread_list($parameters)$/;"	f
+api_upgrade	class.Pet.php	/^	protected function api_upgrade($parameters){$/;"	f
+api_upload	class.Member.php	/^	protected function api_upload($parameters)$/;"	f
+check	class.Pet.php	/^					$check = false;$/;"	v
+check	class.Pet.php	/^				$check=False;$/;"	v
+check	class.Pet.php	/^				$check=true;$/;"	v
+check	class.Pet.php	/^			$check = false;			$/;"	v
+check	class.Pet.php	/^			$check = false;$/;"	v
+check	class.Pet.php	/^			$check=True;$/;"	v
+check	class.Pet.php	/^		$check = true;$/;"	v
+code	class.Member.php	/^		$code = $parameters[0];$/;"	v
+code	class.Member.php	/^		$code = $user->username.":".$user->password;$/;"	v
+code	class.Member.php	/^		$code = base64_decode($code);$/;"	v
+code	class.Member.php	/^		$code=base64_encode($code);$/;"	v
+comments	class.Blog.php	/^			$comments = Post::getCommentsByPostIds($postids, $this->db);$/;"	v
+comments	class.Blog.php	/^		$comments = Post::getCommentsByPostIds($parameters[0], $this->db);$/;"	v
+content	class.Blog.php	/^			$content =htmlspecialchars($_POST['content'],ENT_COMPAT,'UTF-8', false);$/;"	v
+content	class.Blog.php	/^		$content = htmlspecialchars($_POST['content'],ENT_COMPAT,'UTF-8', false);$/;"	v
+db	class.Presenter.php	/^		$this->db = PDAO::getInstance();$/;"	v
+db	class.Presenter.php	/^	protected $db = null;$/;"	v
+extension	class.Member.php	/^			$extension = strtolower (end($split));$/;"	v
+friend_request	class.Blog.php	/^			$friend_request = new Request("api\/friend\/list", array($username));$/;"	v
+friend_request	class.Main.php	/^		$friend_request = new Request("api\/friend\/list", array($sb_username));$/;"	v
+friends	class.Blog.php	/^			$friends = $friend_request->execute()->content;$/;"	v
+friends	class.Main.php	/^		$friends = $friend_request->execute()->content;$/;"	v
+friendsBlock	class.Main.php	/^		$friendsBlock = TemplateFactory::getByFilename("FriendList.phtml")->render(array("friends"=>$friends));$/;"	v
+get_post_list_by_ids	class.Blog.php	/^	private function get_post_list_by_ids($username, $ids) {$/;"	f
+get_unread_post_list_by_ids	class.Blog.php	/^	private function get_unread_post_list_by_ids($username, $ids) {$/;"	f
+group	class.Circle.php	/^		$group = Group::getById($parameters[0], $this->db);$/;"	v
+group	class.Circle.php	/^		$group = Group::getByName($parameters[0], $this->db);$/;"	v
+group	class.Circle.php	/^		$group = new Group($this->db);$/;"	v
+handleRequest	Interface.Presenter.php	/^	public function handleRequest(Request $para_request);$/;"	f
+handle_PetInfo	class.Pet.php	/^	protected function handle_PetInfo($parameters){$/;"	f
+handle_account_delete	class.Admin.php	/^	protected function handle_account_delete($parameters)$/;"	f
+handle_account_list	class.Admin.php	/^	protected function handle_account_list($parameters)$/;"	f
+handle_active	class.Member.php	/^	protected function handle_active($parameters)$/;"	f
+handle_add	class.Friend.php	/^	protected function handle_add($parameters)$/;"	f
+handle_add_user	class.Circle.php	/^	public function handle_add_user($parameters)$/;"	f
+handle_cancel	class.Friend.php	/^	protected function handle_cancel($parameters)$/;"	f
+handle_catch	class.Game.php	/^	protected function handle_catch($parameters)$/;"	f
+handle_circle	class.Blog.php	/^	protected function handle_circle($parameters)$/;"	f
+handle_comment_delete	class.Blog.php	/^	protected function handle_comment_delete($parameters)$/;"	f
+handle_comments	class.Blog.php	/^	protected function handle_comments($parameters)$/;"	f
+handle_confirm	class.Friend.php	/^	protected function handle_confirm($parameters)$/;"	f
+handle_create	class.Circle.php	/^	public function handle_create($parameters)$/;"	f
+handle_default	Interface.Presenter.php	/^	public function handle_default(Request $para_request);$/;"	f
+handle_delete	class.Circle.php	/^	public function handle_delete($parameters)$/;"	f
+handle_deny	class.Friend.php	/^	protected function handle_deny($parameters)$/;"	f
+handle_edit	class.Circle.php	/^	public function handle_edit($parameters)$/;"	f
+handle_editPassword	class.Member.php	/^	protected function handle_editPassword($parameters)$/;"	f
+handle_forget	class.Member.php	/^	protected function handle_forget($parameters){$/;"	f
+handle_group	class.Friend.php	/^	protected function handle_group($parameters)$/;"	f
+handle_guess	class.Game.php	/^			protected function handle_guess($parameters)$/;"	f
+handle_index	class.Main.php	/^	public function handle_index($parameters){$/;"	f
+handle_liked_list	class.Blog.php	/^	protected function handle_liked_list($parameters)$/;"	f
+handle_liked_unread	class.Blog.php	/^	protected function handle_liked_unread($parameters)$/;"	f
+handle_list	class.Circle.php	/^	public function handle_list($parameters)$/;"	f
+handle_login	class.Member.php	/^	protected function handle_login($parameters)$/;"	f
+handle_logout	class.Member.php	/^	protected function handle_logout($parameters)$/;"	f
+handle_post	class.Blog.php	/^	protected function handle_post($parameters)$/;"	f
+handle_post_comment	class.Blog.php	/^	protected function handle_post_comment($parameters)$/;"	f
+handle_post_delete	class.Blog.php	/^	protected function handle_post_delete($parameters)\/\/delete a post$/;"	f
+handle_post_edit	class.Blog.php	/^	protected function handle_post_edit($parameters)\/\/modify a post$/;"	f
+handle_post_like	class.Blog.php	/^	protected function handle_post_like($parameters)$/;"	f
+handle_post_unlike	class.Blog.php	/^	protected function handle_post_unlike($parameters)$/;"	f
+handle_profile	class.Member.php	/^	protected function handle_profile($parameters)$/;"	f
+handle_profile_edit	class.Member.php	/^	protected function handle_profile_edit($parameters)$/;"	f
+handle_register	class.Member.php	/^	protected function handle_register($parameters)$/;"	f
+handle_remove_user	class.Circle.php	/^	public function handle_remove_user($parameters)$/;"	f
+handle_request	class.Presenter.php	/^	public function handle_request(Request $para_request)$/;"	f
+handle_search	class.Blog.php	/^	protected function handle_search($parameters)$/;"	f
+handle_upload	class.Member.php	/^	protected function handle_upload($parameters)$/;"	f
+headers	class.Member.php	/^			$headers = "MIME-Version: 1.0\\r\\n";$/;"	v
+headers	class.Member.php	/^		$headers = "MIME-Version: 1.0\\r\\n";$/;"	v
+ids	class.Blog.php	/^		$ids = array($_SESSION["id"]);$/;"	v
+ids	class.Blog.php	/^		$ids = array();$/;"	v
+indexTpl	class.Main.php	/^			$indexTpl = TemplateFactory::getByFilename("MemberLogin.phtml");$/;"	v
+indexTpl	class.Main.php	/^		$indexTpl = TemplateFactory::getByFilename("MainIndex.phtml");$/;"	v
+isLogin	class.Admin.php	/^		$isLogin = json_decode($response)->content;$/;"	v
+isLogin	class.Blog.php	/^		$this->isLogin = $request->execute();$/;"	v
+isLogin	class.Circle.php	/^		$this->isLogin = $response->content;$/;"	v
+isLogin	class.Friend.php	/^		$this->isLogin = $response->content;$/;"	v
+isLogin	class.Game.php	/^		$this->isLogin = $request->execute();$/;"	v
+isLogin	class.Main.php	/^		$isLogin = $response->content;$/;"	v
+isLogin	class.Pet.php	/^		$this->isLogin = $request->execute();$/;"	v
+isOwn	class.Main.php	/^		$isOwn = $sb_username == $_SESSION["username"];$/;"	v
+list	class.Blog.php	/^		$list = array();$/;"	v
+list	class.Friend.php	/^		$list = $stmt->fetchAll(PDO::FETCH_ASSOC);$/;"	v
+list	class.Friend.php	/^		$list = $stmt->fetchAll(PDO::FETCH_CLASS);$/;"	v
+loginBlock	class.Main.php	/^		$loginBlock = "Hi {$_SESSION["username"]} <a href=\\"".PETTIE_URL."member\/logout\\">logout<\/a>";$/;"	v
+mail_result	class.Member.php	/^		$mail_result = mail("lanyitin800830@gmail.com", $subject.$_POST["email"], $message, $headers);$/;"	v
+mail_result	class.Member.php	/^		$mail_result = mail($_POST["email"], $subject, $message, $headers);$/;"	v
+message	class.Member.php	/^			$message="<html><head><\/head><body>è¦ªæ{$_POST['username']}ï¼æ¨å¥br\/>è¨ä½¿¨Pettieï¼æ¨°çå¯ç¢¼º{$pw}<\/body><\/html>";$/;"	v
+message	class.Member.php	/^		$message="<html><head><\/head><body>è¦ªæ{$_POST['username']}ï¼æ¨å¥br\/>è¨ä½¿¨Pettieï¼è¨éä»¥ä¸éä¾åæ¨å¸³br\/><a href='http:\/\/pettie.blueunit.info\/member\/active\/{$code}'>http:\/\/pettie.blueunit.info\/member\/active\/{$code}<\/a><\/body><\/html>";$/;"	v
+methodName	class.Presenter.php	/^			$methodName = $prefix.$methodName;$/;"	v
+methodName	class.Presenter.php	/^			$methodName = implode("_", $url_arr); $/;"	v
+parameters	class.Presenter.php	/^				$parameters = array_merge((array)$para_request->parameters,array_slice($para_request->url_parameters, $l));$/;"	v
+pet	class.Member.php	/^		$pet = PetInfo::getByUserID($user->id,$this->db);$/;"	v
+pet	class.Pet.php	/^					$pet = new PetInfo($this->db);$/;"	v
+petStatus	class.Pet.php	/^					$petStatus = new PetStatus($this->db);$/;"	v
+petStatus	class.Pet.php	/^			$petStatus  = PetStatus::getByPetID($_SESSION["PetID"], $this->db);$/;"	v
+petStatus	class.Pet.php	/^			$petStatus = PetStatus::getByPetID($_SESSION["PetID"], $this->db);$/;"	v
+petStatus	class.Pet.php	/^		$petStatus  = PetStatus::getByPetID($_SESSION["PetID"], $this->db);$/;"	v
+petStatus	class.Pet.php	/^		$petStatus = PetStatus::getByPetID($_SESSION["PetID"], $this->db);$/;"	v
+petStatus	class.Pet.php	/^		$petStatus = petStatus::getByPetID($_SESSION["PetID"], $this->db);$/;"	v
+petStatus	class.Pet.php	/^		$petStatus =PetStatus::getByPetID($_SESSION["PetID"], $this->db);$/;"	v
+petStatus2	class.Pet.php	/^			$petStatus2  = PetStatus::getByPetID($_SESSION["PetID"], $this->db);$/;"	v
+pet_PetID	class.Main.php	/^		$pet_PetID = isset($_SESSION["PetID"])?$_SESSION["PetID"]:0;$/;"	v
+petid	class.Pet.php	/^					$petid = $stmt->fetch(PDO::FETCH_BOTH);$/;"	v
+post	class.Blog.php	/^				$post = Post::getById($parameters[0], $this->db);$/;"	v
+post	class.Blog.php	/^			$post = new Post($this->db);$/;"	v
+post	class.Blog.php	/^		$post = Post::getById($parameters[0], $this->db);$/;"	v
+post	class.Blog.php	/^		$post = new Post($this->db);$/;"	v
+postids	class.Blog.php	/^			$postids = array();$/;"	v
+postids	class.Blog.php	/^		$postids = array();$/;"	v
+postids	class.Blog.php	/^		$postids = implode(",", $postids);$/;"	v
+posts	class.Blog.php	/^			$posts = Post::getListBySearch($_POST["keyword"], $this->db);$/;"	v
+prefix	class.Presenter.php	/^		$prefix = $para_request->apiMode?"api_":"handle_";$/;"	v
+profile	class.Main.php	/^		$profile = $_SESSION;$/;"	v
+pw	class.Member.php	/^			$pw = generateRandomString();$/;"	v
+r	class.Member.php	/^		$r = $this->api_isLogin($parameters);$/;"	v
+reply	class.Blog.php	/^			$reply = (int)$parameters[0];$/;"	v
+request	class.Admin.php	/^		$request = new Request("api\/member\/isLogin");$/;"	v
+request	class.Blog.php	/^		$request = new Request("api\/member\/isLogin");$/;"	v
+request	class.Circle.php	/^		$request = new Request("api\/member\/isLogin");$/;"	v
+request	class.Friend.php	/^		$request = new Request("api\/member\/isLogin");$/;"	v
+request	class.Game.php	/^		$request = new Request("api\/member\/isLogin");$/;"	v
+request	class.Main.php	/^		$request = new Request("api\/member\/isLogin");$/;"	v
+request	class.Main.php	/^		$request = new Request("api\/pet\/info\/" . $sb_username . "\/");$/;"	v
+request	class.Pet.php	/^		$request = new Request("api\/member\/isLogin");$/;"	v
+request	class.Pet.php	/^		$request = new Request("api\/pet\/info\/" . $parameters[0] . "\/");$/;"	v
+response	Interface.Presenter.php	/^	public function response();$/;"	f
+response	class.Admin.php	/^		$response = $request->execute();$/;"	v
+response	class.Blog.php	/^				$this->response = new Response(0, $tpl);$/;"	v
+response	class.Circle.php	/^		$response = $request->execute();$/;"	v
+response	class.Friend.php	/^		$response = $request->execute();$/;"	v
+response	class.Main.php	/^		$response = $request->execute();$/;"	v
+response	class.Pet.php	/^		$response = $request->execute();$/;"	v
+response	class.Presenter.php	/^				$response =  $this->$methodName($parameters);$/;"	v
+response	class.Presenter.php	/^	protected $response = null;$/;"	v
+result	class.Member.php	/^			$result = $this->api_editPassword($parameters);$/;"	v
+result	class.Member.php	/^		$result = $this->api_active($parameters);$/;"	v
+result	class.Member.php	/^		$result = $this->api_forget($parameters);$/;"	v
+result	class.Member.php	/^		$result = $this->api_login($parameters);$/;"	v
+result	class.Member.php	/^		$result = $this->api_profile($parameters);$/;"	v
+result	class.Member.php	/^		$result = $this->api_register($parameters);$/;"	v
+result	class.Member.php	/^		$result = $this->api_upload($parameters);$/;"	v
+result	class.Member.php	/^		$result = (isset($_SESSION["username"]) && $_SESSION["username"] !== "" && $_SESSION["username"] !== null);$/;"	v
+row	class.Admin.php	/^		$row = $stmt->fetchAll();$/;"	v
+row	class.Blog.php	/^				$row = Post::getById($parameters[0], $this->db);;$/;"	v
+row	class.Blog.php	/^			$row = Post::getListByUsername($username, $this->db);$/;"	v
+row	class.Blog.php	/^			$row = Post::getReadedListByUserIds($ids, $this->db);$/;"	v
+row	class.Blog.php	/^			$row = Post::getUnreadedListByUserIds($ids, $this->db);$/;"	v
+row	class.Blog.php	/^		$row = $this->get_post_list_by_ids($username, $ids);$/;"	v
+row	class.Blog.php	/^		$row = $this->get_unread_post_list_by_ids($username, $ids);$/;"	v
+row	class.Blog.php	/^		$row = Post::getByGroupid($parameters[0], $this->db);$/;"	v
+row	class.Blog.php	/^		$row = Post::getLikedList($username, $this->db);$/;"	v
+row	class.Blog.php	/^		$row = Post::getUnreadLiked($username, $this->db);$/;"	v
+row	class.Pet.php	/^					$row = $stmt->fetch(PDO::FETCH_OBJ);$/;"	v
+row	class.Pet.php	/^				$row =$this->api_info($parameters);$/;"	v
+row	class.Pet.php	/^		$row = $stmt->fetch(PDO::FETCH_OBJ);$/;"	v
+row2	class.Blog.php	/^			$row2 = Post::getById($parameters[0], $this->db);$/;"	v
+row2	class.Blog.php	/^			$row2 = Post::getCommentsByPostIds($postids,$this->db);$/;"	v
+row2	class.Blog.php	/^			$row2 = array();$/;"	v
+row2	class.Blog.php	/^		$row2 = Post::getCommentsByPostIds($list,$this->db);$/;"	v
+row2	class.Blog.php	/^		$row2 = Post::getCommentsByPostIds($postids,$this->db);$/;"	v
+rows	class.Circle.php	/^		$rows = $this->api_list($parameters)->content;$/;"	v
+rows	class.Circle.php	/^		$rows = Group::getListByUsername($username, $this->db);$/;"	v
+rows	class.Circle.php	/^		$rows = array();$/;"	v
+sb	class.Main.php	/^		$sb = AccountInfo::getByUsername($sb_username, $this->db);$/;"	v
+sb_username	class.Main.php	/^		$sb_username = isset($parameters[0])?$parameters[0]:$_SESSION["username"];$/;"	v
+split	class.Member.php	/^			$split = explode(".", $_FILES["file"]["name"]);$/;"	v
+sql	class.Admin.php	/^		$sql = "select * from AccountInfo";$/;"	v
+sql	class.Admin.php	/^		$sql = "update AccountInfo set status='Disactived' where username='{$parameters[0]}'";$/;"	v
+sql	class.Blog.php	/^			$sql = sprintf("delete from LIKE_POST where mid=\\"%s\\" AND pid= \\"%s\\"", $_SESSION["id"], $parameters[0]);$/;"	v
+sql	class.Blog.php	/^			$sql = sprintf("insert into LIKE_POST (mid, pid) values (\\"%s\\", \\"%s\\")", $_SESSION["id"], $parameters[0]);$/;"	v
+sql	class.Blog.php	/^			$sql = sprintf("insert into READ_POST select {$_SESSION["id"]} as mid, Post.id as pid from Post where Post.id in (%s)", $postids);$/;"	v
+sql	class.Circle.php	/^		$sql = sprintf("select AccountInfo.id from AccountInfo, IN_GROUP where IN_GROUP.mid=AccountInfo.id AND IN_GROUP.gid=%d", $parameters[0]);$/;"	v
+sql	class.Friend.php	/^		$sql = sprintf("SELECT * FROM `Group` inner join IN_GROUP on `Group`.id=IN_GROUP.gid inner join AccountInfo on AccountInfo.id=IN_GROUP.mid where `Group`.id=\\"%d\\"", $parameters[0]);$/;"	v
+sql	class.Friend.php	/^		$sql = sprintf("delete from Relationship where mid1=%d and mid2=(select id from AccountInfo where username=\\"%s\\")", $_SESSION["id"], $parameters[0]);$/;"	v
+sql	class.Friend.php	/^		$sql = sprintf("insert into Relationship(mid1, mid2) values (%d, select id from AccountInfo where username=\\"%s\\")", $_SESSION["id"], $parameters[0]);$/;"	v
+sql	class.Friend.php	/^		$sql = sprintf("select AccountInfo.* from AccountInfo, (select Relationship.mid2 as id from Relationship, AccountInfo where Relationship.mid1=AccountInfo.id and AccountInfo.id=\\"%s\\" and Relationship.status=\\"Pendding\\" UNION select Relationship.mid1 as id from Relationship,AccountInfo where Relationship.mid2=AccountInfo.id and AccountInfo.id=\\"%s\\" and Relationship.status=\\"Pendding\\") as FriendInfo where AccountInfo.id=FriendInfo.id", $_SESSION["id"], $_SESSION["id"]);$/;"	v
+sql	class.Friend.php	/^		$sql = sprintf("select AccountInfo.* from AccountInfo, (select Relationship.mid2 as id from Relationship, AccountInfo where Relationship.mid1=AccountInfo.id and AccountInfo.username=\\"%s\\" and Relationship.status=\\"Comfirmed\\" UNION select Relationship.mid1 as id from Relationship,AccountInfo where Relationship.mid2=AccountInfo.id and AccountInfo.username=\\"%s\\" and Relationship.status=\\"Comfirmed\\") as FriendInfo where AccountInfo.id=FriendInfo.id", $userid, $userid);$/;"	v
+sql	class.Friend.php	/^		$sql = sprintf("update Relationship set status=\\"Comfirmed\\" where mid1=%d and mid2=(select id from AccountInfo where username=\\"%s\\")", $_SESSION["id"], $parameters[0]);$/;"	v
+sql	class.Pet.php	/^					$sql = sprintf("select PetID From PetInfo Where UserID = \\"%d\\"",$_SESSION["id"]);$/;"	v
+sql	class.Pet.php	/^					$sql = sprintf("select PetInfo.*, PetStatus.* from PetInfo, PetStatus, AccountInfo where PetInfo.UserID=AccountInfo.id AND PetStatus.PetID=PetInfo.PetID AND AccountInfo.id=%d", $_SESSION["id"]);$/;"	v
+sql	class.Pet.php	/^		$sql = sprintf("select PetInfo.*, PetStatus.* from PetInfo, PetStatus, AccountInfo where PetInfo.UserID=AccountInfo.id AND PetStatus.PetID=PetInfo.PetID AND AccountInfo.id=%d", $user->id);$/;"	v
+src	class.Member.php	/^					$src = imagecreatefromjpeg($_FILES['file']['tmp_name']);$/;"	v
+src_h	class.Member.php	/^					$src_h = imagesy($src);$/;"	v
+src_w	class.Member.php	/^					$src_w = imagesx($src);$/;"	v
+stmt	class.Admin.php	/^		$stmt = $this->db->prepare($sql);$/;"	v
+stmt	class.Blog.php	/^			$stmt = $this->db->prepare("DELETE FROM Post WHERE reply =?");$/;"	v
+stmt	class.Circle.php	/^		$stmt = $this->db->query($sql);$/;"	v
+stmt	class.Friend.php	/^		$stmt = $this->db->query($sql);$/;"	v
+stmt	class.Pet.php	/^					$stmt = $this->db->query($sql) or die($stmt->error());$/;"	v
+stmt	class.Pet.php	/^					$stmt = $this->db->query($sql);$/;"	v
+stmt	class.Pet.php	/^		$stmt = $this->db->query($sql);$/;"	v
+subject	class.Member.php	/^			$subject="Pettieå¯ç¢¼è®æ´ç¥";$/;"	v
+subject	class.Member.php	/^		$subject="Pettieå¸³èè¨»åéç¥ä¿¡";$/;"	v
+thumb	class.Member.php	/^					$thumb = imagecreatetruecolor($thumb_w, $thumb_h);$/;"	v
+thumb_h	class.Member.php	/^								$thumb_h = 180;$/;"	v
+thumb_h	class.Member.php	/^							$thumb_h = intval($src_h \/ $src_w * 180);$/;"	v
+thumb_w	class.Member.php	/^							$thumb_w = 180;$/;"	v
+thumb_w	class.Member.php	/^							$thumb_w = intval($src_w \/ $src_h * 180);$/;"	v
+time	class.Blog.php	/^		$time =date('y-m-d h:i:s',time());$/;"	v
+tpl	class.Blog.php	/^				$tpl = TemplateFactory::getByFilename("BlogComment.phtml");$/;"	v
+tpl	class.Blog.php	/^				$tpl = TemplateFactory::getByFilename("BlogPostEdit.phtml");$/;"	v
+tpl	class.Blog.php	/^			$tpl = TemplateFactory::getByFilename("BlogComment.phtml");$/;"	v
+tpl	class.Blog.php	/^			$tpl = TemplateFactory::getByFilename("BlogPost.phtml");$/;"	v
+tpl	class.Blog.php	/^			$tpl = TemplateFactory::getByFilename("BlogSearch.phtml");$/;"	v
+tpl	class.Blog.php	/^		$tpl = TemplateFactory::getByFilename("BlogView.phtml");$/;"	v
+tpl	class.Circle.php	/^			$tpl = TemplateFactory::getByFilename("CircleCreate.phtml");$/;"	v
+tpl	class.Circle.php	/^			$tpl = TemplateFactory::getByFilename("CircleEdit.phtml");$/;"	v
+tpl	class.Circle.php	/^		$tpl = TemplateFactory::getByFilename("CircleList.phtml");$/;"	v
+tpl	class.Game.php	/^			$tpl = TemplateFactory::getByFilename("catch.html");$/;"	v
+tpl	class.Game.php	/^			$tpl = TemplateFactory::getByFilename("guess.phtml");$/;"	v
+tpl	class.Member.php	/^				$tpl = TemplateFactory::getByFilename("MemberEditPassword.phtml");$/;"	v
+tpl	class.Member.php	/^				$tpl = TemplateFactory::getByFilename("MemberEditProfile.phtml");$/;"	v
+tpl	class.Member.php	/^			$tpl = TemplateFactory::getByFilename("MemberForget.phtml");$/;"	v
+tpl	class.Member.php	/^			$tpl = TemplateFactory::getByFilename("MemberProfile.phtml");$/;"	v
+tpl	class.Member.php	/^			$tpl = TemplateFactory::getByFilename("MemberUpload.phtml");$/;"	v
+tpl	class.Member.php	/^		$tpl = TemplateFactory::getByFilename("MemberLogin.phtml");$/;"	v
+tpl	class.Member.php	/^		$tpl = TemplateFactory::getByFilename("MemberRegister.phtml");$/;"	v
+tpl	class.Pet.php	/^		$tpl = TemplateFactory::getByFilename("PetInfo.phtml");$/;"	v
+url_arr	class.Presenter.php	/^			$url_arr = array_slice($para_request->url_parameters, 0, $l); $/;"	v
+user	class.Member.php	/^						$user = AccountInfo::getById($_SESSION["id"], $this->db);$/;"	v
+user	class.Member.php	/^				$user = AccountInfo::getById($_SESSION["id"], $this->db);$/;"	v
+user	class.Member.php	/^			$user = AccountInfo::getByEmail($_POST["email"]);$/;"	v
+user	class.Member.php	/^		$user = AccountInfo::getById($_SESSION["id"], $this->db);$/;"	v
+user	class.Member.php	/^		$user = AccountInfo::getByUsername($_POST['username'],$this->db);$/;"	v
+user	class.Member.php	/^		$user = AccountInfo::getByUsername($username, $this->db);$/;"	v
+user	class.Member.php	/^		$user = new AccountInfo($this->db);$/;"	v
+user	class.Pet.php	/^		$user = AccountInfo::getById($_SESSION["id"], $this->db);$/;"	v
+user	class.Pet.php	/^		$user = AccountInfo::getByUsername($parameters[0], $this->db);$/;"	v
+userid	class.Friend.php	/^		$userid=isset($parameters[0])?$parameters[0]:$_SESSION["username"];$/;"	v
+username	class.Blog.php	/^		$username=isset($parameters[0])?$parameters[0]:$_SESSION["username"];$/;"	v
+username	class.Circle.php	/^		$username = isset($parameters[0])?$parameters[0]:$_SESSION["username"];$/;"	v
+username	class.Member.php	/^		$username = isset($parameters[0])?$parameters[0]:$_SESSION["username"];$/;"	v

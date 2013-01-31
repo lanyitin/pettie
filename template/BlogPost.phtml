@@ -1,0 +1,15 @@
+﻿<div style="width:70px; height:65px;float:left;padding-top:10px;">
+	<select name="type" id="type">
+		<option value="喜歡">喜歡</option>
+		<option value="分享">分享</option>
+		<option value="說">說</option>
+		<option value="問">問</option>
+	</select>
+	<img id="Mbsetting" src="<?php echo PETTIE_URL;?>images/Mbsetting.png" />
+</div>
+<div style="width:240px; height:65px;float:left; padding-top:10px"> <textarea name="content" id="content" style="overflow-x:hidden;overflow-y:hidden;resize:none"/> </textarea> </div>
+<div style="width:50px;height:0px;float:left">
+	<div style="width:50px; height:50px">
+		<input id="pen" type="image" src="<?php echo PETTIE_URL;?>images/pen.png" alt="Submit" onClick="$.post(pettie.url + 'blog/post/', {'content':$('#content').val(), 'type':$('#type').val()}).done(function(data){pettie.blog.push_post_data_to_post_queue(JSON.parse(data));$('#content').val('')});" style="z-index=2">
+	</div>
+</div>

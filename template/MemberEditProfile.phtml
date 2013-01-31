@@ -1,0 +1,7 @@
+<form method="POST" action="<?php echo PETTIE_URL?>member/profile/edit/" enctype="multipart/form-data">
+	Email:<input name="email" type="email" value='<?php echo $tpl_email;?>'/><br/>
+	<image src='<?php echo PETTIE_URL . $this->get("pic_src");?>'/><br/>
+	<input name="file" type="file"/><br/>
+	<input type="submit" value="Confirm"/>
+	<input type="reset" value="Cancel"/>
+</form>

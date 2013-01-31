@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FileTemplate	class.FileTemplate.php	/^class FileTemplate extends Template$/;"	c
+FixedTemplate	class.FixedTemplate.php	/^class FixedTemplate extends Template$/;"	c
+ITemplate	Interface.ITemplate.php	/^interface ITemplate$/;"	i
+ITemplate	interface.ITemplate.php	/^interface ITemplate$/;"	i
+Template	class.Template.php	/^abstract class Template implements ITemplate$/;"	c
+TemplateFactory	class.TemplateFactory.php	/^class TemplateFactory$/;"	c
+__construct	class.FileTemplate.php	/^	function __construct($filePath)$/;"	f
+__construct	class.FixedTemplate.php	/^	function __construct($para_str)$/;"	f
+__construct	class.Template.php	/^	function __construct()$/;"	f
+__get	class.Template.php	/^	function __get($key)$/;"	f
+__set	class.Template.php	/^	function __set($key, $value)$/;"	f
+__toString	class.Template.php	/^	public function __toString()$/;"	f
+compile	class.FileTemplate.php	/^	public function compile()$/;"	f
+compile	class.Template.php	/^	abstract public function compile();$/;"	f
+compiledContent	class.Template.php	/^	protected $compiledContent;$/;"	v
+execTplCode	class.FixedTemplate.php	/^	public function execTplCode()$/;"	f
+filePath	class.FileTemplate.php	/^		$this->filePath = $filePath;$/;"	v
+filePath	class.FileTemplate.php	/^	private $filePath = null;$/;"	v
+filePath	class.TemplateFactory.php	/^		$filePath = TPL_PATH.$filename;$/;"	v
+get	Interface.ITemplate.php	/^	public function get($key);$/;"	f
+get	class.Template.php	/^	public function get($key)$/;"	f
+get	interface.ITemplate.php	/^	public function get($key);$/;"	f
+getByFilename	class.TemplateFactory.php	/^	public static function getByFilename($filename)$/;"	f
+key	class.Template.php	/^		foreach($parameters as $key=>$value)$/;"	v
+patterns	class.FixedTemplate.php	/^		$patterns = array();$/;"	v
+render	Interface.ITemplate.php	/^	public function render($parameters);$/;"	f
+render	class.Template.php	/^	public function render($parameters = array())$/;"	f
+render	interface.ITemplate.php	/^	public function render($parameters);$/;"	f
+replacements	class.FixedTemplate.php	/^		$replacements = array();$/;"	v
+response	class.FileTemplate.php	/^		$response = ob_get_contents();$/;"	v
+set	Interface.ITemplate.php	/^	public function set($key, $value);$/;"	f
+set	class.Template.php	/^	public function set($key, $value)$/;"	f
+set	interface.ITemplate.php	/^	public function set($key, $value);$/;"	f
+str	class.FixedTemplate.php	/^		$this->str = $para_str;$/;"	v
+tpl	class.TemplateFactory.php	/^		$tpl = new FileTemplate($filePath);$/;"	v
+vars	class.Template.php	/^		$this->vars = array();$/;"	v
+vars	class.Template.php	/^	protected $vars;$/;"	v

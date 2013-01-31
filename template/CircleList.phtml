@@ -1,0 +1,5 @@
+<?php foreach($this->get("circles") as $circle){ ?>
+<?php echo $circle->name;?>
+<a href="<?php echo PETTIE_URL;?>circle/edit/<?php echo $circle->id;?>">Edit</a>
+<a href="<?php echo PETTIE_URL;?>circle/delete/<?php echo $circle->id;?>">Delete</a><br/>
+<?php } ?>

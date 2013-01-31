@@ -1,0 +1,7 @@
+#Catch_myCanvasContainer {
+	position: absolute; 
+	top:0px;
+	left:0px;
+	z-index:2;
+	visibility:visible;
+}

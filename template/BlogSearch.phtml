@@ -1,0 +1,7 @@
+	<select name="type" id="type">
+		<option value="post">文章</option>
+		<option value="username">使用者</option>
+	</select>
+	<textarea name="keyword" id="content" style="overflow-x:hidden;overflow-y:hidden"/>
+	</textarea>
+	<input id="pen" type="image" src="<?php echo PETTIE_URL;?>images/search.png" alt="Submit" onClick="$.post(pettie.url + 'blog/search/', {'keyword':$('#content').val(), 'type':$('#type').val()},function(data) {data = JSON.parse(data);data.posts.forEach(function(post){pettie.blog.post_queue.push(post);})});return false" style="z-index=2">

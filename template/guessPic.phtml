@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>What it is? :: Normal Level</title>
+	
+</head>
+
+<body onload="guessPic_init()">
+<script>
+$(guessPic_init());
+</script>
+<div id="guessPic_background">
+	<div id="question">
+		<img id="questionImage" src="<?php echo PETTIE_URL;?>images/questions/dog.jpg" alt="">
+		
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">	
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+		<div class="box16">
+			<div class="boxcaption">
+				<img src="<?php echo PETTIE_URL;?>images/door.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<form id="guessPic_form" name="ansform" action="javascript:showTime();">
+		<input type="text" id="guessPic_inputAns">
+		<input id="ansbtn" class="guessPic_button" type="image" src="<?php echo PETTIE_URL;?>images/ansbutton.png" alt="Submit" onClick="guessPic_submitAns()">
+	</form>
+	<button id="hintbtn" class="guessPic_button" onclick="showHint()">
+		<img id="hintImg" src="<?php echo PETTIE_URL;?>images/hintbutton.png" alt="">
+	</button>
+	<button id="givebtn" class="guessPic_button" onclick="giveUp()">
+		<img id="giveImg" src="<?php echo PETTIE_URL;?>images/givebutton.png" alt="">
+	</button>
+	
+	<div id="hint">
+		<span>&nbsp;&nbsp;Hint&nbsp;&nbsp;</span>
+		<div id="hintword"></div>
+	</div>
+	
+	<div id="test"></div>
+	
+	<div id="totalTime">
+		Time:<div id="guessPic_time">00 : 00</div>
+	</div>
+	
+</div>	
+
+</body>
+</html>
+
+
+
